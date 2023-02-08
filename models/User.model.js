@@ -6,8 +6,10 @@ const userSchema = new Schema({
     type: String,
     unique: true
   },
-  password: String
+  // why is it pw hash and not pw?
+   passwordHash: String
 });
+
 
 const User = model("User", userSchema);
 

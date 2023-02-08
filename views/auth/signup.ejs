@@ -1,0 +1,18 @@
+<h2> Signup page </h2>
+
+<!-- method POST because  -->
+<form method="POST" action="/auth/signup">
+    <label>
+        Username:
+        <input type="text" name="username"/>
+      </label>
+      <label>
+        Password:
+        <input type="password" name="password" />
+      </label>
+      <button type="submit"> Sign-up!</button>
+</form>
+
+<% if (typeof errorMessage !== 'undefined') { %>
+  <p style="color: red"><%= errorMessage %></p>
+  <% } %>
